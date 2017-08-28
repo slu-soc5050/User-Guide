@@ -46,4 +46,4 @@ git commit -m "Remove stale book folder"
 
 msg "Adding the new \`master\` branch as a subtree"
 git subtree add --prefix=_book \
-    https://github.com/slu-soc5650/User-Guide.git master --squash
+    https://github.com/slu-soc5050/User-Guide.git master --squash
