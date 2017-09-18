@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>SOC 4930/5050 User’s Guide</title>
   <meta name="description" content="This course User’s Guide is a companion document for SOC 4650/5650 - Introduction to Geographic Information Sciences.">
-  <meta name="generator" content="bookdown 0.4 and GitBook 2.6.7">
+  <meta name="generator" content="bookdown 0.5 and GitBook 2.6.7">
 
   <meta property="og:title" content="SOC 4930/5050 User’s Guide" />
   <meta property="og:type" content="book" />
@@ -25,7 +25,7 @@
 <meta name="author" content="Christopher Prener, Ph.D.">
 
 
-<meta name="date" content="2017-08-28">
+<meta name="date" content="2017-09-18">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -244,20 +244,20 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <div id="examples" class="section level3">
 <h3><span class="header-section-number">2.5.2</span> Examples</h3>
 <p>Throughout the semester, I will give you examples both in lecture slides and in an example do-file. Examples in lectures and course documents can be easily identified by their use of the <code>typewriter typeface</code>:</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">&gt;<span class="st"> </span><span class="kw">library</span>(ggplot2)
-&gt;<span class="st"> </span><span class="kw">str</span>(mpg)
-Classes ‘tbl_df’, ‘tbl’ and <span class="st">&#39;data.frame&#39;</span>:<span class="st">   </span><span class="dv">234</span> obs. of  <span class="dv">11</span> variables:
-<span class="st"> </span><span class="er">$</span><span class="st"> </span>manufacturer:<span class="st"> </span>chr  <span class="st">&quot;audi&quot;</span> <span class="st">&quot;audi&quot;</span> <span class="st">&quot;audi&quot;</span> <span class="st">&quot;audi&quot;</span> ...
- $<span class="st"> </span>model       :<span class="st"> </span>chr  <span class="st">&quot;a4&quot;</span> <span class="st">&quot;a4&quot;</span> <span class="st">&quot;a4&quot;</span> <span class="st">&quot;a4&quot;</span> ...
- $<span class="st"> </span>displ       :<span class="st"> </span>num  <span class="fl">1.8</span> <span class="fl">1.8</span> <span class="dv">2</span> <span class="dv">2</span> <span class="fl">2.8</span> <span class="fl">2.8</span> <span class="fl">3.1</span> <span class="fl">1.8</span> <span class="fl">1.8</span> <span class="dv">2</span> ...
- $<span class="st"> </span>year        :<span class="st"> </span>int  <span class="dv">1999</span> <span class="dv">1999</span> <span class="dv">2008</span> <span class="dv">2008</span> <span class="dv">1999</span> <span class="dv">1999</span> <span class="dv">2008</span> <span class="dv">1999</span> <span class="dv">1999</span> <span class="dv">2008</span> ...
- $<span class="st"> </span>cyl         :<span class="st"> </span>int  <span class="dv">4</span> <span class="dv">4</span> <span class="dv">4</span> <span class="dv">4</span> <span class="dv">6</span> <span class="dv">6</span> <span class="dv">6</span> <span class="dv">4</span> <span class="dv">4</span> <span class="dv">4</span> ...
- $<span class="st"> </span>trans       :<span class="st"> </span>chr  <span class="st">&quot;auto(l5)&quot;</span> <span class="st">&quot;manual(m5)&quot;</span> <span class="st">&quot;manual(m6)&quot;</span> <span class="st">&quot;auto(av)&quot;</span> ...
- $<span class="st"> </span>drv         :<span class="st"> </span>chr  <span class="st">&quot;f&quot;</span> <span class="st">&quot;f&quot;</span> <span class="st">&quot;f&quot;</span> <span class="st">&quot;f&quot;</span> ...
- $<span class="st"> </span>cty         :<span class="st"> </span>int  <span class="dv">18</span> <span class="dv">21</span> <span class="dv">20</span> <span class="dv">21</span> <span class="dv">16</span> <span class="dv">18</span> <span class="dv">18</span> <span class="dv">18</span> <span class="dv">16</span> <span class="dv">20</span> ...
- $<span class="st"> </span>hwy         :<span class="st"> </span>int  <span class="dv">29</span> <span class="dv">29</span> <span class="dv">31</span> <span class="dv">30</span> <span class="dv">26</span> <span class="dv">26</span> <span class="dv">27</span> <span class="dv">26</span> <span class="dv">25</span> <span class="dv">28</span> ...
- $<span class="st"> </span>fl          :<span class="st"> </span>chr  <span class="st">&quot;p&quot;</span> <span class="st">&quot;p&quot;</span> <span class="st">&quot;p&quot;</span> <span class="st">&quot;p&quot;</span> ...
- $<span class="st"> </span>class       :<span class="st"> </span>chr  <span class="st">&quot;compact&quot;</span> <span class="st">&quot;compact&quot;</span> <span class="st">&quot;compact&quot;</span> <span class="st">&quot;compact&quot;</span> ...</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="op">&gt;</span><span class="st"> </span><span class="kw">library</span>(ggplot2)
+<span class="op">&gt;</span><span class="st"> </span><span class="kw">str</span>(mpg)
+Classes ‘tbl_df’, ‘tbl’ and <span class="st">&#39;data.frame&#39;</span><span class="op">:</span><span class="st">   </span><span class="dv">234</span> obs. of  <span class="dv">11</span> variables<span class="op">:</span>
+<span class="st"> </span><span class="er">$</span><span class="st"> </span>manufacturer<span class="op">:</span><span class="st"> </span>chr  <span class="st">&quot;audi&quot;</span> <span class="st">&quot;audi&quot;</span> <span class="st">&quot;audi&quot;</span> <span class="st">&quot;audi&quot;</span> ...
+ <span class="op">$</span><span class="st"> </span>model       <span class="op">:</span><span class="st"> </span>chr  <span class="st">&quot;a4&quot;</span> <span class="st">&quot;a4&quot;</span> <span class="st">&quot;a4&quot;</span> <span class="st">&quot;a4&quot;</span> ...
+ <span class="op">$</span><span class="st"> </span>displ       <span class="op">:</span><span class="st"> </span>num  <span class="fl">1.8</span> <span class="fl">1.8</span> <span class="dv">2</span> <span class="dv">2</span> <span class="fl">2.8</span> <span class="fl">2.8</span> <span class="fl">3.1</span> <span class="fl">1.8</span> <span class="fl">1.8</span> <span class="dv">2</span> ...
+ <span class="op">$</span><span class="st"> </span>year        <span class="op">:</span><span class="st"> </span>int  <span class="dv">1999</span> <span class="dv">1999</span> <span class="dv">2008</span> <span class="dv">2008</span> <span class="dv">1999</span> <span class="dv">1999</span> <span class="dv">2008</span> <span class="dv">1999</span> <span class="dv">1999</span> <span class="dv">2008</span> ...
+ <span class="op">$</span><span class="st"> </span>cyl         <span class="op">:</span><span class="st"> </span>int  <span class="dv">4</span> <span class="dv">4</span> <span class="dv">4</span> <span class="dv">4</span> <span class="dv">6</span> <span class="dv">6</span> <span class="dv">6</span> <span class="dv">4</span> <span class="dv">4</span> <span class="dv">4</span> ...
+ <span class="op">$</span><span class="st"> </span>trans       <span class="op">:</span><span class="st"> </span>chr  <span class="st">&quot;auto(l5)&quot;</span> <span class="st">&quot;manual(m5)&quot;</span> <span class="st">&quot;manual(m6)&quot;</span> <span class="st">&quot;auto(av)&quot;</span> ...
+ <span class="op">$</span><span class="st"> </span>drv         <span class="op">:</span><span class="st"> </span>chr  <span class="st">&quot;f&quot;</span> <span class="st">&quot;f&quot;</span> <span class="st">&quot;f&quot;</span> <span class="st">&quot;f&quot;</span> ...
+ <span class="op">$</span><span class="st"> </span>cty         <span class="op">:</span><span class="st"> </span>int  <span class="dv">18</span> <span class="dv">21</span> <span class="dv">20</span> <span class="dv">21</span> <span class="dv">16</span> <span class="dv">18</span> <span class="dv">18</span> <span class="dv">18</span> <span class="dv">16</span> <span class="dv">20</span> ...
+ <span class="op">$</span><span class="st"> </span>hwy         <span class="op">:</span><span class="st"> </span>int  <span class="dv">29</span> <span class="dv">29</span> <span class="dv">31</span> <span class="dv">30</span> <span class="dv">26</span> <span class="dv">26</span> <span class="dv">27</span> <span class="dv">26</span> <span class="dv">25</span> <span class="dv">28</span> ...
+ <span class="op">$</span><span class="st"> </span>fl          <span class="op">:</span><span class="st"> </span>chr  <span class="st">&quot;p&quot;</span> <span class="st">&quot;p&quot;</span> <span class="st">&quot;p&quot;</span> <span class="st">&quot;p&quot;</span> ...
+ <span class="op">$</span><span class="st"> </span>class       <span class="op">:</span><span class="st"> </span>chr  <span class="st">&quot;compact&quot;</span> <span class="st">&quot;compact&quot;</span> <span class="st">&quot;compact&quot;</span> <span class="st">&quot;compact&quot;</span> ...</code></pre></div>
 <p>Examples will almost always use the dataframe <code>mpg</code>, which comes pre-installed with the <code>ggplot2</code> package. To open it, simply load the <code>ggplot2</code> package using the <code>library()</code> function and then start referencing <code>mpg</code> anytime you need a dataframe. This allows you to easily recreate examples by minimizing dependencies within your code.</p>
 
 </div>
@@ -280,7 +280,7 @@ Classes ‘tbl_df’, ‘tbl’ and <span class="st">&#39;data.frame&#39;</span>
 <script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
 <script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
 <script>
-require(["gitbook"], function(gitbook) {
+gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
 "sharing": {
 "github": false,
@@ -309,4 +309,4 @@ gitbook.start({
 
 </body>
 
-</html>
+<!-- </html> -->
